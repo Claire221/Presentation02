@@ -1,5 +1,14 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 /* Custom CSS */
+.image-gallery-svg {
+  height: 70px  !important;
+}
+
+
+.image {
+  width: 60%;
+}
+
 .image-gallery-play-button,
 .image-gallery-fullscreen-button   {
   display: none !important; 
@@ -7,20 +16,26 @@
 
 .image-section {
   display: flex;
+  flex-direction: column;
   width: 95vw;
   margin: 2% auto;
   border: solid 2px red;
 }
 
-.image-col-1 {
-  width: 40%;
+.image-col-2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
   border: solid 2px green;
 }
 
-.image-col-2 {
-  width: 60%;
-  border: solid 2px purple;
-}
+/* .image-gallery-image {
+  width: 70% !important;
+  margin: 0 auto;
+
+} */
 
 /* Default Styles */
 .App {

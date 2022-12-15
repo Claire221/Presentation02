@@ -1,12 +1,16 @@
 
 import './App.css';
 
-import MyGallery from "./pages/Gallery"
+import Flask from "./pages/Flask"
+import Jinja from "./pages/Jinja"
+import Django from "./pages/Django"
 
 function App() {
   return (
     <div className="App">
-      <MyGallery/>
+      <Flask/>
+      <Jinja/>
+      <Django/>
     </div>
   );
 }
