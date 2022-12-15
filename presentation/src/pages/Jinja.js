@@ -57,6 +57,10 @@ export default function Jinja() {
                                         <ListGroup.Item>Conditionals</ListGroup.Item>
                                         <ListGroup.Item>Messages</ListGroup.Item>
                                     </ListGroup>
+                                    <div>
+                                        <a href="https://bookmarked-app.herokuapp.com/" className="link">Live Site</a>
+                                        <a href="https://github.com/Claire221/bookmarked" className="link">Github</a> 
+                                    </div>
                                 </div>
                             </div>
                 </motion.div>

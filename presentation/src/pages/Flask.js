@@ -3,6 +3,7 @@ import ImageGallery from 'react-image-gallery';
 import { motion } from 'framer-motion';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+
 const images = [
   {
     original: "https://github.com/Claire221/Presentation02/blob/main/presentation/src/images/project01-01.jpg?raw=true",
@@ -60,6 +61,10 @@ export default function Flask() {
                                     <ListGroup.Item>session_user</ListGroup.Item>
                                     <ListGroup.Item>url_for</ListGroup.Item>
                                   </ListGroup>
+                                  <div>
+                                    <a href="https://bookmarked-app.herokuapp.com/" className="link">Live Site</a>
+                                    <a href="https://github.com/Claire221/bookmarked" className="link">Github</a> 
+                                  </div>
                               </div>
                             </div>
                 </motion.div>

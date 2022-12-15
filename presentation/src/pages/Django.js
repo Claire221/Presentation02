@@ -58,6 +58,9 @@ export default function Django() {
                                     <ListGroup.Item>HttpResponse</ListGroup.Item>
                                     <ListGroup.Item>form</ListGroup.Item>
                                 </ListGroup>
+                                <div>
+                                    <a href="https://github.com/Claire221/Across-The-Ages" className="link">Github</a> 
+                                </div>
                             </div>
                         </div>
                 </motion.div>
