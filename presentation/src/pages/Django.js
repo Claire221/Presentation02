@@ -1,7 +1,7 @@
 import React from "react"
 import ImageGallery from 'react-image-gallery';
 import { motion } from 'framer-motion';
-
+import ListGroup from 'react-bootstrap/ListGroup';
 
 const images = [
   {
@@ -33,7 +33,7 @@ const images = [
 export default function Django() {
 
     return (
-        <section className="image-section">
+
             <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -42,15 +42,25 @@ export default function Django() {
                         variants={{
                             visible: { opacity: 1, scale: 1 },
                             hidden: { opacity: 0, scale: 0 } }}
-                        className="">
-                        <div className="image-col-1">
-                            <h1>Flask</h1>
-                        </div>
-                        <div className="image-col-2">
-                            <ImageGallery items={images}/>
+                        className="section-div">
+                        <h2 className="section-title">Django</h2>
+                        <div className="content-div">
+                            <div className="section-col-1">
+                                <ImageGallery items={images}/>
+                            </div>
+                            <div className="section-col-2">
+                                <p className="section-sub-title">Features</p>
+                                <ListGroup>
+                                    <ListGroup.Item>Render</ListGroup.Item>
+                                    <ListGroup.Item>Redirect</ListGroup.Item>
+                                    <ListGroup.Item>Reverse</ListGroup.Item>
+                                    <ListGroup.Item>get_object_or_404</ListGroup.Item>
+                                    <ListGroup.Item>HttpResponse</ListGroup.Item>
+                                    <ListGroup.Item>form</ListGroup.Item>
+                                </ListGroup>
+                            </div>
                         </div>
                 </motion.div>
-        </section>
-        
+
     );
 }

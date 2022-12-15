@@ -1,12 +1,15 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
-/* Custom CSS */
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Comic+Neue&display=swap');
+
+/* React image gallery styles */
 .image-gallery-svg {
   height: 70px  !important;
 }
 
-
-.image {
-  width: 60%;
+img.image-gallery-image {
+  width: 70% !important;
+  margin: 2%;
+  border: solid 3px #01729f;;
 }
 
 .image-gallery-play-button,
@@ -14,28 +17,71 @@
   display: none !important; 
 }
 
-.image-section {
+/* Custom CSS */
+body {
+  font-family: 'Comic Neue', cursive;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2)),
+    url("https://images.unsplash.com/photo-1619963225112-a3cba72baeca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-repeat: repeat;
+  background-position: bottom;
+  background-size: cover;
+
+}
+
+.section-div {
   display: flex;
   flex-direction: column;
-  width: 95vw;
-  margin: 2% auto;
-  border: solid 2px red;
+
+  width: 75vw;
+  margin: 4% auto;
+
+  background-color: rgba(255,255,255, .8);
+
+  border: solid 5px #d65438;
 }
 
-.image-col-2 {
-  width: 50%;
+.content-div {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2% auto;
-  border: solid 2px green;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
 }
 
-/* .image-gallery-image {
-  width: 70% !important;
-  margin: 0 auto;
+.section-title {
+  color: #6d3773;
+  font-size: 3.5rem;
+  padding: 1% 0;
+  margin: 0;
+  font-family: 'Bad Script', cursive;
+  font-weight: 600;
+}
 
-} */
+.section-sub-title {
+  color: #6d0423;
+  font-size: 2.25rem;
+  padding: 3% 0;
+  margin: 0;
+}
+
+
+.section-col-1 {
+  width: 60%;
+}
+
+.section-col-2 {
+  width: 30%;
+  margin: 0 0 5%;
+}
+
+.list-group {
+  font-size: 2rem;
+  padding: 1% 0 3%;
+}
+
+.list-group-item {
+  padding: 1% 0;
+}
 
 /* Default Styles */
 .App {
